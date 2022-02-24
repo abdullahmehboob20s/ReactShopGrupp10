@@ -1,9 +1,21 @@
 # Table of content
 
 - Git
-- Available Scripts
+- Getting Started with Create React App
 
 # Git
+
+## Quick step by step on how to Git:
+
+- Create a new branch
+
+Note: Make sure you are working in your own branch and not directly in Main branch.
+
+`git branch -b <name_of_your_branch>`
+
+- Check wich branch you are at
+
+`git branch`
 
 - Merge
 
@@ -36,9 +48,6 @@ git push origin main
 ```
 
 4. Test the website and make sure it is working properly. Done!
-
-
-TLDR: Fix conflicts on your local working branch BEFORE merging into Main branch. By doing so, hopefully it will result in less headache. =)
 
 # Getting Started with Create React App
 
