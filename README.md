@@ -6,15 +6,38 @@
 # Git
 
 ## Quick step by step on how to Git:
+These are just suggestions on what git commands to use to up your Git game.
 
-- Create a new branch
+###### Create a new branch
 
-Note: Make sure you are working in your own branch and not directly in Main branch.
+Note: Make sure you are working in your _own_ branch and not directly in Main branch.
 
 `git branch -b <name_of_your_branch>`
 *This will create a new branch and then jump straigt to it.*
 
-- Check on wich branch you are curently at
+###### Commits and push
+a simple step by step on how to commit and push your latest updates
+
+1. Start by typing:
+`git status`
+*this will show you uncommited files in red and already commited files in green.*
+
+2. Add the files you want to commit:
+`git add <name_on_the_file>`
+*if you want to add a specific file*
+
+or
+
+`git add .`
+*this will add all uncommited files*
+
+3. `git commit -m "type_a_meaningful_message"`
+
+4. `git push origin <name_on_your_branch>`
+
+5. If no error occured then you are Done!
+
+###### Check on wich branch you are curently at
 
 `git branch`
 
@@ -23,11 +46,11 @@ or
 `git branch -a`
 *This will show local and remote branches*
 
-- Switch to a different branch
+###### Switch to a different branch
 
 `git checkout <name_of_the_branch_you_want_to_jump_to`
 
-- Merge
+###### Merge
 
 ***TLDR: Fix conflicts on your local working branch BEFORE merging into Main branch. By doing so, hopefully it will result in less headache. =)***
 
