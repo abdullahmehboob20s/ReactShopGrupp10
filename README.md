@@ -12,12 +12,24 @@
 Note: Make sure you are working in your own branch and not directly in Main branch.
 
 `git branch -b <name_of_your_branch>`
+*This will create a new branch and then jump straigt to it.*
 
-- Check wich branch you are at
+- Check on wich branch you are curently at
 
 `git branch`
 
+or
+
+`git branch -a`
+*This will show local and remote branches*
+
+- Switch to a different branch
+
+`git checkout <name_of_the_branch_you_want_to_jump_to`
+
 - Merge
+
+***TLDR: Fix conflicts on your local working branch BEFORE merging into Main branch. By doing so, hopefully it will result in less headache. =)***
 
 1. Before merging into main: make sure your local Main branch is upp to date with the latest by doing a: `git pull` from your local Main branch.
 
