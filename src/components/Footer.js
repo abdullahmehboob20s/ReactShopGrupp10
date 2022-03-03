@@ -2,7 +2,11 @@ import React from 'react'
 
 function Footer() {
   return (
-    <div>Footer</div>
+    <div>
+      <h1>CarShop AB</h1>
+      
+
+    </div>
   )
 }
 
