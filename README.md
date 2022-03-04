@@ -8,6 +8,10 @@
 ## Quick step by step on how to Git:
 These are just suggestions on what git commands to use to up your Git game.
 
+### Get the latest updates from branch (git pull)
+
+`git pull origin <branch_name>`
+
 ### Create a new branch
 
 Note: Make sure you are working in your _own_ branch and not directly in Main branch.
