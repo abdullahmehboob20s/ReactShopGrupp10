@@ -14,7 +14,7 @@ These are just suggestions on what git commands to use to up your Git game.
 
 ### Create a new branch
 
-Note: Make sure you are working in your _own_ branch and not directly in Main branch.
+Note: Make sure you are working in your _own_ branch and not directly in Develop branch.
 
 `git branch <name_of_your_branch>`
 *This will create a new branch.*
