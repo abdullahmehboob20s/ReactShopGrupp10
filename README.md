@@ -8,12 +8,20 @@
 ## Quick step by step on how to Git:
 These are just suggestions on what git commands to use to up your Git game.
 
+### Get the latest updates from branch (git pull)
+
+`git pull origin <branch_name>`
+
 ### Create a new branch
 
-Note: Make sure you are working in your _own_ branch and not directly in Main branch.
+Note: Make sure you are working in your _own_ branch and not directly in Develop branch.
 
-`git branch -b <name_of_your_branch>`
-*This will create a new branch and then jump straigt to it.*
+`git branch <name_of_your_branch>`
+*This will create a new branch.*
+
+### Switch to a different branch
+
+`git checkout <name_of_the_branch_you_want_to_jump_to`
 
 ### Commits and push
 a simple step by step on how to commit and push your latest updates
@@ -46,40 +54,38 @@ or
 `git branch -a`
 *This will show local and remote branches*
 
-### Switch to a different branch
-
-`git checkout <name_of_the_branch_you_want_to_jump_to`
-
 ### Merge
 
-***TLDR: Fix conflicts on your local working branch BEFORE merging into Main branch. By doing so, hopefully it will result in less headache. =)***
+***TLDR: Fix conflicts on your local working branch BEFORE merging into Develop branch. By doing so, hopefully it will result in less headache. =)***
 
-1. Before merging into main: make sure your local Main branch is upp to date with the latest by doing a: `git pull` from your local Main branch.
+1. Before merging into develop: make sure your local Develop branch is upp to date with the latest by doing a: `git pull` from your local Develop branch.
 
 Steps:
 ```
-git checkout main
-git pull orgin main
+git checkout develop
+
+git pull origin develop
 ````
 
-2. Go back to your working branch then do a git merge main and solve conflicts
+2. Go back to your working branch then do a git merge develop and solve conflicts
 
 Steps:
-`git checkout` -your local branch name-
-`git merge main`
-
+```
+git checkout -your local branch name-
+git merge develop
+```
     - solve any conflicts and test the website to make sure it works properly. Then commit any changes you made, then push.
 
 `git commit -m "come up with a explaining message"`
 `git push origing` -your local branch name-
 
-3. When all conflicts are solved and everything is pushed, head back to Main branch to merge your working branch into Main branch.
+3. When all conflicts are solved and everything is pushed, head back to Develop branch to merge your working branch into Develop branch.
 
 Steps:
 ```
-git checkout main
+git checkout develop
 git merge -your local branch name-
-git push origin main
+git push origin develop
 ```
 
 4. Test the website and make sure it is working properly. Done!
