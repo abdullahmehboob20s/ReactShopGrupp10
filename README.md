@@ -63,15 +63,17 @@ or
 Steps:
 ```
 git checkout develop
+
 git pull origin develop
 ````
 
 2. Go back to your working branch then do a git merge develop and solve conflicts
 
 Steps:
-`git checkout` -your local branch name-
-`git merge develop`
-
+```
+git checkout -your local branch name-
+git merge develop
+```
     - solve any conflicts and test the website to make sure it works properly. Then commit any changes you made, then push.
 
 `git commit -m "come up with a explaining message"`
