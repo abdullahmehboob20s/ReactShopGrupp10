@@ -63,7 +63,7 @@ or
 Steps:
 ```
 git checkout develop
-git pull orgin develop
+git pull origin develop
 ````
 
 2. Go back to your working branch then do a git merge develop and solve conflicts
