@@ -6,7 +6,7 @@ function Footer() {
     <div className={footerStyle.Footer}>
       <div className={footerStyle.sectionFooter}>
         <div className={footerStyle.sectionBox}>
-          <h1>CarShop AB</h1>
+          <h1>Ferrgino AB</h1>
           <p>Gustavslundsvägen 151 D <br/>
           167 51, Bromma.</p>
         </div>
