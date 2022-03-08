@@ -28,8 +28,8 @@ function Products() {
    <h1>Products</h1>
       {
         products.map (product => (
-        <article key={product._id}>
-          <Link to ={`/products/${product._id}`}>
+        <article key={product.id} onClick={() => {console.log(product.id)}}>
+          <Link to ={`/products/${product.id}`}>
             <p>{product.title} - {product.price} - <img src ={product.url} alt="car"/></p>
             </Link>
         </article>
@@ -39,7 +39,6 @@ function Products() {
   
   )
 
-    
 }
 
 export default Products

@@ -1,8 +1,8 @@
 import React from "react"
-import '../Style/cart.css'
+import '../components/Cart.css'
 import { FaWindowClose } from 'react-icons/fa';
 import { Link } from "react-router-dom";
-import CartItem from "./CartItem";
+import CartItem from "./CartItems.js";
 
 
 
@@ -32,9 +32,9 @@ function Cart({ items, setItems, open, setOpen, sum, deleteAll }) {
           <h2>ORDER SUMMARY</h2>
           <div className='closeBtn' onClick={() => setOpen(!open)}><FaWindowClose /></div>
         </div>
-        <div>{items.length === 0 && <h3 className='empty'>Cart is empty</h3>}</div>
+        {/* <div>{items.length === 0 && <h3 className='empty'>Cart is empty</h3>}</div> */}
         <div className="product-cart-container">
-          {
+          {/* {
             items.map((item) =>
               <CartItem
                 key={item.id}
@@ -44,7 +44,7 @@ function Cart({ items, setItems, open, setOpen, sum, deleteAll }) {
 
               />
             )
-          }
+          } */}
         </div>
 
         <div className='cart-footer'>
