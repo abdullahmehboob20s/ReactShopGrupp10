@@ -6,7 +6,7 @@ function Product() {
   const params = useParams();
   const fetchCarData = async () => {
     try {
-      const response = await fetch('https://codexplained.se/cars.php' + params.id);
+      const response = await fetch('https://codexplained.se/cars.php?id=' + params.id);
       const data = await response.json();
       console.log(data);
 
@@ -23,7 +23,10 @@ function Product() {
   return (
     <div>
       <h1>från Product {params.id}</h1>
-      <p>hejsan</p>
+      <h2>{product.title}</h2>
+      <p>Pris: {product.price} - Antal i lager: {product.storage} st</p>
+      <p>{product.description}</p>
+      <img src={product.url}/>
     </div>
   )
 }
