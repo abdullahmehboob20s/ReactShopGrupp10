@@ -7,24 +7,34 @@ import {
   Route,
 } from "react-router-dom";
 import Footer from './components/Footer';
-import Product from './pages/Product';
+import Home from './pages/Home';
 import Products from './pages/Products';
+import Product from './pages/Product';
+import Cart from './components/Cart'
+
 
 
 function App() {
+  
   return (
     <div className="App">
-      <Navbar />
       <BrowserRouter>
-        <Routes>
-          <Route path="/products/:id" element={<Product />} />
-          
-        </Routes>
-      {/* <Products /> */}
-      </BrowserRouter>
+      <Navbar />
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Cart" element={<Cart />} />
+        <Route path="/Products" element={<Products />} />
+        <Route path="/products/:id" element={<Product />} />
+        
+    </Routes>
+  </BrowserRouter>,
+     
+      
+      
+    
       <Footer />
     </div>
   );
 }
-// Code from mikeProduct wont be main, just use route
+
 export default App;

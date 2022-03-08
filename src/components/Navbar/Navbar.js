@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { MenuItems } from "./MenuItems"
 import { Button } from "../Button"
+import {Link} from 'react-router-dom';
 import "./Navbar.css"
 
 class Navbar extends Component {
@@ -17,21 +18,26 @@ class Navbar extends Component {
                     className="navbar-logo">Ferrgino<i className="fab fa-react"></i></h1>
                     <div className="menu-icon" onClick={this.handleClick}>
                         <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                        </div>
+                        <div> 
 
+                       
                     </div>
                     <ul className={this.state.clicked ? 'nav-menu-active' : 'nav-menu'}>
                         {MenuItems.map ((item, index) => {
                             return (
                                 <li key={index}>
-                                    <a className={item.cName} href={item.url}>
+                                    <Link to = {item.url} className={item.cName}>
                                     {item.title}
-                                    </a>
+                                    </Link>
+                                    
+                                
                                 </li>
                             )
                         })}
 
                     </ul>
-                    <Button>Sign Up</Button>
+                    <Button>Checkout</Button>
                 </nav>
             )    
         }
