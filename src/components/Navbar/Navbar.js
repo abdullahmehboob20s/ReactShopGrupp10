@@ -21,21 +21,22 @@ class Navbar extends Component {
                         </div>
                         <div> 
 
-                        <Link to = "/">Home</Link> | <Link to ="/Cart">Cart</Link> | <Link to ="/Products">Products</Link>
+                       
                     </div>
                     <ul className={this.state.clicked ? 'nav-menu-active' : 'nav-menu'}>
                         {MenuItems.map ((item, index) => {
                             return (
                                 <li key={index}>
-                                    <a className={item.cName} href={item.url}>
+                                    <Link to = "/" className={item.cName}>
                                     {item.title}
-                                    </a>
+                                    </Link>
+                                
                                 </li>
                             )
                         })}
 
                     </ul>
-                    <Button>Sign Up</Button>
+                    <Button>Cart</Button>
                 </nav>
             )    
         }

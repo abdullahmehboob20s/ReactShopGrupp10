@@ -7,9 +7,10 @@ import {
   Route,
 } from "react-router-dom";
 import Footer from './components/Footer';
-import Cart from './pages/Cart';
 import Home from './pages/Home';
 import Products from './pages/Products';
+import Cart from './components/Cart'
+
 
 
 function App() {
@@ -21,9 +22,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Cart" element={<Cart />} />
         <Route path="/Products" element={<Products />} />
+        
     </Routes>
   </BrowserRouter>,
-      <Cart />
+     
       
       
       Webshop in React

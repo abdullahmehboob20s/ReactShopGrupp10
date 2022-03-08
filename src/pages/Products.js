@@ -1,4 +1,6 @@
 import React, {useState, useEffect} from 'react'
+import {Link} from 'react-router-dom';
+// import { useState } from 'react'
 
 function Products() {
     const [products, setProducts] = useState([]);
@@ -18,20 +20,23 @@ function Products() {
   useEffect(() => {
     fetchData();
   }, []);
-  
+
+ 
   
   return (
     <div>
    <h1>Products</h1>
-    
       {
         products.map (product => (
-        <article>
-          <p>{product.title}</p>
+        <article key={product._id}>
+          <Link to ={`/products/${product._id}`}>
+            <p>{product.title} - {product.price} - <img src ={product.url} alt="car"/></p>
+            </Link>
         </article>
       ))
     }
   </div>
+  
   )
 
     
