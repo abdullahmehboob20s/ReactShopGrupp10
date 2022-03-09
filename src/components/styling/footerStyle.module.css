@@ -1,0 +1,15 @@
+.Footer {
+    background-color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+.sectionFooter {
+    display: flex;
+}
+
+.sectionBox {
+    width: 50vw;
+    padding: 5vh 15vw 5vh;    
+}
