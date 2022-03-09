@@ -1,0 +1,15 @@
+.video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+.homeContainer {
+    background-color: yellow;
+    background-image: url(../../images/ferrari.jpg);
+    background-size: cover;
+    height: 100vh;
+}
